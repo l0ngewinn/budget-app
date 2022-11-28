@@ -8,6 +8,10 @@ BoxLayout:
     orientation: 'vertical'
     Label: 
         text: 'Budget for Broke Bitches'
+    Button:
+        text: 'Budget Button'
+        on_press: budgetManager.add_budget()
+        
 '''
 
 

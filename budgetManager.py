@@ -1,10 +1,17 @@
 class BudgetManager: 
     def __init__(self):
-        self.available = int(input('What is the available amount for your budget?'))
+        self.available = available
         self.budgets = {}
         self.expenditure = {}
 
-    name = int(input('What is the name of the budget category?\n'))
-    amount = input('What is the amount of this budget category?\n ')
-    def add_budget(self, name, amount):
-        return
+    def addBudget(self):
+        global available 
+        available = int(input('What is the available amount for your budget?\n'))
+        if name in self.budgets:
+            raise ValueError('Budget Exists')
+        if amount > self.available:
+            raise ValueError('Insufficient Funds')
+        self.budgets[name] = amount
+        self.available -= amount
+        self.expenditure[name] = 0
+        return self.available
