@@ -10,10 +10,9 @@ BoxLayout:
         text: 'Budget for Broke Bitches'
     Button:
         text: 'Budget Button'
-        on_press: budgetManager.add_budget()
+        on_press: budgetManager.addBudget()
         
 '''
-
 
 class BudgetApp(App):
     def build(self):
