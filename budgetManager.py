@@ -1,5 +1,5 @@
 class BudgetManager: 
-    def __init__(self, available):
+    def __init__(self):
         self.available = int(input('What is the available amount for your budget?'))
         self.budgets = {}
         self.expenditure = {}
