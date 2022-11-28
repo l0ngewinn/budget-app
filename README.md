@@ -1,0 +1,1 @@
+To start Kivy Environment: source /Users/longnguyen/Projects/budget-app/kivy_venv/bin/activate
