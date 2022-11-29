@@ -1,16 +1,17 @@
 from kivy.app import App
 from kivy.lang import Builder
 
-import budgetManager
-
 kv = '''
-BoxLayout:
-    orientation: 'vertical'
-    Label: 
-        text: 'Budget for Broke Bitches'
-    Button:
-        text: 'Budget Button'
-        on_press: budgetManager.addBudget()
+ScreenManager:
+    Screen:
+        name: 'main_screen'
+    BoxLayout:
+        orientation: 'vertical'
+        Label: 
+            text: 'Budget for Broke Bitches'
+        Button:
+            text: 'Budget Button'
+            on_press: budgetManager.addBudget()
         
 '''
 
